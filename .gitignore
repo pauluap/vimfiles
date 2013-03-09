@@ -1,0 +1,14 @@
+/.svn
+
+/.VimballRecord
+
+/.netrwhist
+
+/_backup/*
+
+/_swp/*
+
+/.triggers
+
+/*.pyc
+

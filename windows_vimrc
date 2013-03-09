@@ -1,0 +1,23 @@
+source $VIMRUNTIME/vimrc_example.vim
+"source $VIMRUNTIME/mswin.vim
+"behave mswin
+
+set gfn=Consolas:h8:cANSI
+set ff=dos                    "Set file mode to DOS"
+let g:showfuncctagsbin = "c:\\ctags\\ctags.exe"
+let g:Tlist_Ctags_Cmd = "c:\\ctags\\ctags.exe"
+"  backup options
+
+source $HOME/vimfiles/vimrc.vim
+
+filetype off
+set runtimepath+=$HOME/vimfiles
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+filetype on
+
+" Make sure that the after directory is the last item
+" in the runtime path
+set runtimepath+=$HOME/vimfiles/after
+
