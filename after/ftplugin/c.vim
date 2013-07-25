@@ -87,7 +87,10 @@ function! Register(...)
   while index <= a:0
     execute 'let ext=a:'.index
   " execute 'au! CursorHold '.ext.' nested call PreviewWord()'
+    execute 'augroup au_afterc'
+    execute 'au!'
     execute 'au BufNewFile,BufRead '.ext.' nested inoremap <buffer> ( <Esc>:call PreviewFunctionSignature()<CR>a('
+    execute 'augroup END'
     let index=index+1
   endwhile
 endf

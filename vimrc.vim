@@ -230,12 +230,6 @@ fun! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-autocmd BufWritePre *.h :call <SID>StripTrailingWhitespaces()
-autocmd BufWritePre *.c :call <SID>StripTrailingWhitespaces()
-autocmd BufWritePre *.cpp :call <SID>StripTrailingWhitespaces()
-autocmd BufWritePre *.py :call <SID>StripTrailingWhitespaces()
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-
 "This unsets the "last search pattern" register by hitting return
 nnoremap <CR> :noh<CR><CR>
 
@@ -243,6 +237,11 @@ augroup myvimrc
     au!
 "    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
     au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC
+    au BufWritePre *.h :call <SID>StripTrailingWhitespaces()
+    au BufWritePre *.c :call <SID>StripTrailingWhitespaces()
+    au BufWritePre *.cpp :call <SID>StripTrailingWhitespaces()
+    au BufWritePre *.py :call <SID>StripTrailingWhitespaces()
+    au FileType python setlocal omnifunc=pythoncomplete#Complete
 augroup END
 
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"

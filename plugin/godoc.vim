@@ -38,7 +38,10 @@ function! s:GodocView()
 
   nnoremap <buffer> <silent> K :Godoc<cr>
 
-  au BufHidden <buffer> call let <SID>buf_nr = -1
+  augroup au_go
+      au!
+      au BufHidden <buffer> call let <SID>buf_nr = -1
+  augroup END
 endfunction
 
 function! s:GodocWord(word)
