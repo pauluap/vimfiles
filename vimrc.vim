@@ -58,7 +58,8 @@ set tw=500                    " default textwidth is a max of 500
 set cmdheight=2               " command line two lines high
 set undolevels=1000           " 1000 undos
 set updatecount=100           " switch every 100 chars
-set complete=.,w,i,t
+set complete=.,b,t
+set include=''
 set ttyfast                   " we have a fast terminal
 filetype on                   " Enable filetype detection
 filetype indent on            " Enable filetype-specific indenting
@@ -240,8 +241,6 @@ augroup myvimrc
     au BufWritePre *.h :call <SID>StripTrailingWhitespaces()
     au BufWritePre *.c :call <SID>StripTrailingWhitespaces()
     au BufWritePre *.cpp :call <SID>StripTrailingWhitespaces()
-    au BufWritePre *.py :call <SID>StripTrailingWhitespaces()
-    au FileType python setlocal omnifunc=pythoncomplete#Complete
 augroup END
 
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
