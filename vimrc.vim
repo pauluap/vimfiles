@@ -278,7 +278,11 @@ match OverLength /\%81v.\+/
 "let g:acp_completeoptPreview=1
 let g:acp_enableAtStartup=1
 let g:acp_behaviorKeywordLength=4
-let g:acp_completeOption='.,w,i,t'
+let g:acp_completeOption='.,w,t'
+
+" Jedi-vim
+let g:jedi#auto_initialization=0
+let g:jedi#auto_vim_configuration=0
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
