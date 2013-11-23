@@ -116,5 +116,5 @@ let g:acp_enableAtStartup=1
 let g:acp_behaviorKeywordLength=4
 let g:acp_completeOption='.,w,i,t'
 
-inoremap <tab> <Esc>/<#[^>]*#><CR>cf>
+"inoremap <tab> <Esc>/<#[^>]*#><CR>cf>
 
