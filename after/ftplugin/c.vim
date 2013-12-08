@@ -24,6 +24,9 @@ let g:clang_use_library = 1
 let g:clang_debug = 0
 let g:clang_auto_user_options = ".clang_complete"
 
+set concealcursor=inv
+set conceallevel=2
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " au! CursorHold *.[ch] nested call PreviewWord()
 map <F8> :call PreviewWord() <CR>
@@ -116,5 +119,5 @@ let g:acp_enableAtStartup=1
 let g:acp_behaviorKeywordLength=4
 let g:acp_completeOption='.,w,i,t'
 
-inoremap <tab> <Esc>/<#[^>]*#><CR>cf>
+"inoremap <tab> <Esc>/<#[^>]*#><CR>cf>
 

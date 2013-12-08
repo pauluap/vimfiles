@@ -44,7 +44,8 @@ VC_DEFAULT = 3
 #
 
 bundles = [
-        {'bundle':"git://github.com/mileszs/ack.vim.git"                                    , 'keepvc':True , 'os':OS_ALL     , 'use':True},
+        {'bundle':"git://github.com/mileszs/ack.vim.git"                                      , 'keepvc':True , 'os':OS_ALL     , 'use':True},
+        {'bundle':"git://github.com/bernh/pss.vim.git"                                        , 'keepvc':True , 'os':OS_ALL     , 'use':True},
         {'bundle':"git://github.com/tpope/vim-pathogen.git"                                   , 'keepvc':True , 'os':OS_ALL     , 'use':True},
         {'bundle':"git://github.com/Rip-Rip/clang_complete.git"                               , 'keepvc':True , 'os':OS_ALL     , 'use':True},
         {'bundle':"git://github.com/ghewgill/vim-scmdiff.git"                                 , 'keepvc':True , 'os':OS_ALL     , 'use':True},
