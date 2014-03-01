@@ -23,6 +23,8 @@ let g:clang_trailing_placeholder = 1
 let g:clang_use_library = 1
 let g:clang_debug = 0
 let g:clang_auto_user_options = ".clang_complete"
+let g:clang_jumpto_declaration_key = '<C-+>'
+let g:clang_jumpto_back_key = '<C-|>'
 
 set concealcursor=inv
 set conceallevel=2
