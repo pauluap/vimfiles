@@ -6,16 +6,8 @@ set gfn=Consolas:h8:cANSI
 set ff=dos                    "Set file mode to DOS"
 let g:showfuncctagsbin = "c:\\ctags\\ctags.exe"
 let g:Tlist_Ctags_Cmd = "c:\\ctags\\ctags.exe"
-"  backup options
 
 source $HOME/vimfiles/vimrc.vim
-
-filetype off
-set runtimepath+=$HOME/vimfiles
-call pathogen#incubate()
-call pathogen#helptags()
-
-filetype on
 
 " Make sure that the after directory is the last item
 " in the runtime path

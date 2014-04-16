@@ -1,8 +1,30 @@
 set nocompatible
-
 set noswapfile
 set backupdir=$HOME/vimfiles/_backup
 set directory=$HOME/vimfiles/_swp//
+
+" Configure plugins before using Vundle to load them
+"
+" AutoComplPop
+"let g:acp_completeoptPreview=1
+let g:acp_enableAtStartup=1
+let g:acp_behaviorKeywordLength=4
+let g:acp_completeOption='.,w,t'
+
+" Jedi-vim
+let g:jedi#auto_initialization=0
+let g:jedi#auto_vim_configuration=0
+let g:jedi#show_call_signatures=0
+let g:jedi#popup_select_first=0
+
+" YCM
+let g:ycm_min_num_of_chars_for_completion = 3
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_server_use_vim_stdout = 0
+
+filetype off
+source ~/vimfiles/vundle_config.vim
+filetype on
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
@@ -275,20 +297,6 @@ match OverLength /\%81v.\+/
 "\      ]
 "\}
 
-" AutoComplPop
-"let g:acp_completeoptPreview=1
-let g:acp_enableAtStartup=1
-let g:acp_behaviorKeywordLength=4
-let g:acp_completeOption='.,w,t'
-
-" Jedi-vim
-let g:jedi#auto_initialization=0
-let g:jedi#auto_vim_configuration=0
-
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
 "
 " XML formatter
 function! DoFormatXML() range

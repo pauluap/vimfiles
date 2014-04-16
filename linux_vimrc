@@ -9,17 +9,10 @@ let g:secure_modelines_modelines = 15 " 15 available modelines
 " ---------------------------------------------------------------------------
 
 set gfn=ProggyTinyTT\ 12
-filetype off
-
-set runtimepath+=~/vimfiles
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
-set runtimepath+=~/vimfiles/after
-
-set backup
-set backupdir=$HOME/.vim/_backup
-set directory=$HOME/.vim/_swp//
 
 source ~/vimfiles/vimrc.vim
+
+" Make sure that the after directory is the last item
+" in the runtime path
+set runtimepath+=$HOME/vimfiles/after
 
