@@ -36,6 +36,7 @@ Plugin 'a.vim'
 Plugin 'bandit.vim'
 Plugin 'occur.vim'
 Plugin 'taglist.vim'
+Plugin 'nose.vim'
 " Plugin 'pep8'
 
 Plugin 'AutoComplPop'

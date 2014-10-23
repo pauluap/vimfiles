@@ -8,7 +8,7 @@ let g:secure_modelines_modelines = 15 " 15 available modelines
 
 " ---------------------------------------------------------------------------
 
-set gfn=ProggyTinyTT\ 12
+set gfn=Ubuntu\ Mono\ 10
 
 source ~/vimfiles/vimrc.vim
 

@@ -3,6 +3,8 @@ set noswapfile
 set backupdir=$HOME/vimfiles/_backup
 set directory=$HOME/vimfiles/_swp//
 
+set runtimepath+=$HOME/vimfiles
+
 " Configure plugins before using Vundle to load them
 "
 " AutoComplPop
