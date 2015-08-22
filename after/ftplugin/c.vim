@@ -33,7 +33,7 @@ set conceallevel=2
 " au! CursorHold *.[ch] nested call PreviewWord()
 map <F8> :call PreviewWord() <CR>
 
-set cinoptions+=:N0,(0,u0,U0  " Don't indent case statements in switch struct
+set cinoptions+=:N0,(0,u0,U0,g0  " Don't indent case statements in switch struct
 
 func! PreviewWord()
   if &previewwindow			" don't do this in the preview window

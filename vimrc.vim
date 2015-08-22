@@ -102,7 +102,7 @@ set magic                     " Enable the "magic"
 set visualbell t_vb=          " Disable ALL bells
 set cursorline                " show the cursor line
 set tags=tags                 "
-set cinoptions+=:N0,(0,u0,U0  " Don't indent case statements in switch struct
+set cinoptions+=:N0,(0,u0,U0,g0  " Don't indent case statements in switch struct
 set completeopt=menuone,longest
 
 if !has("gui_running")
@@ -287,6 +287,7 @@ inoremap <expr> j pumvisible() ? "\<Down>" : "j"
 inoremap <expr> k pumvisible() ? "\<Up>" : "k"
 
 let g:load_doxygen_syntax=1
+let g:session_autosave = 'no'
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
