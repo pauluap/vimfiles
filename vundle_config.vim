@@ -18,6 +18,12 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'tpope/vim-unimpaired.git'
 Plugin 'tsaleh/vim-align.git'
 Plugin 'wgibbs/vim-irblack.git'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-session'
+Plugin 'xolox/vim-shell'
+Plugin 'xolox/vim-easytags'
+Plugin 'jeaye/color-coded'
+Plugin 'Konfekt/FastFold'
 
 Plugin 'Valloric/YouCompleteMe.git'
 
@@ -39,7 +45,7 @@ Plugin 'taglist.vim'
 Plugin 'nose.vim'
 " Plugin 'pep8'
 
-Plugin 'AutoComplPop'
+" Plugin 'AutoComplPop'
 
 " scripts not on GitHub
 Plugin 'git://git.wincent.com/command-t.git'
