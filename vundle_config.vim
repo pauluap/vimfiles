@@ -18,12 +18,10 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'tpope/vim-unimpaired.git'
 Plugin 'tsaleh/vim-align.git'
 Plugin 'wgibbs/vim-irblack.git'
-Plugin 'xolox/vim-misc'
-Plugin 'xolox/vim-session'
-Plugin 'xolox/vim-shell'
-Plugin 'xolox/vim-easytags'
 Plugin 'jeaye/color-coded'
 Plugin 'Konfekt/FastFold'
+Plugin 'schickling/vim-bufonly'
+Plugin 'wincent/command-t'
 
 Plugin 'Valloric/YouCompleteMe.git'
 
@@ -48,7 +46,7 @@ Plugin 'nose.vim'
 " Plugin 'AutoComplPop'
 
 " scripts not on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+"Plugin 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
 " Plugin 'file:///home/gmarik/path/to/plugin'
 " ...
