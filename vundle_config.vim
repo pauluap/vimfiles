@@ -18,7 +18,9 @@ Plugin 'scrooloose/nerdtree.git'
 Plugin 'tpope/vim-unimpaired.git'
 Plugin 'tsaleh/vim-align.git'
 Plugin 'wgibbs/vim-irblack.git'
-Plugin 'jeaye/color-coded'
+if (!has('win32') && !has('win64'))
+    Plugin 'jeaye/color_coded'
+endif
 Plugin 'Konfekt/FastFold'
 Plugin 'schickling/vim-bufonly'
 Plugin 'wincent/command-t'
