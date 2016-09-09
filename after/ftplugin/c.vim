@@ -1,5 +1,8 @@
-map <F12> :!ctags -R --sort=foldcase --language-force=c -L filelist <CR>
-map <S-F12> :!ctags -R --sort=foldcase --language-force=c --c-kinds=+pl --fields=+iaS --extra=+q -L filelist <CR>
+set autoindent
+set expandtab
+set softtabstop=4
+set shiftwidth=4
+
 inoremap <C-k> <C-x><C-o>
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929

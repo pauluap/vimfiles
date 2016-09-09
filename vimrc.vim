@@ -31,6 +31,8 @@ filetype on
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
+map <S-F12> :!ctags -R --fields=+l <CR>
+
 set diffexpr=MyDiff()
 fun! MyDiff()
   let opt = '-a --binary '
