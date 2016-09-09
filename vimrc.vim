@@ -1,9 +1,15 @@
 set nocompatible
 set noswapfile
 set backupdir=$HOME/vimfiles/_backup
+set undodir=$HOME/vimfiles/_backup
 set directory=$HOME/vimfiles/_swp//
 
 set runtimepath+=$HOME/vimfiles
+
+if (has('win32') || has('win64'))
+    let $PATH = 'C:\Python27;' . $PATH
+    let g:ycm_server_python_interpreter='C:\Python34\python.exe'
+endif
 
 " Configure plugins before using Vundle to load them
 "
@@ -23,6 +29,10 @@ let g:jedi#popup_select_first=0
 let g:ycm_min_num_of_chars_for_completion = 3
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_server_use_vim_stdout = 0
+let g:ycm_complete_in_comments = 1
+let g:ycm_complete_in_strings = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_collect_identifiers_from_tags_files = 1
 
 filetype off
 source ~/vimfiles/vundle_config.vim
@@ -152,6 +162,15 @@ nmap <LocalLeader>fb :FufBuffer<CR>
 nmap <LocalLeader>ff :FufFile<CR>
 " find in tag is ,ft
 nmap <LocalLeader>ft :FufTag<CR>
+
+" ---------------------------------------------------------------------------
+"  configuration for YcmCompleter
+nnoremap <LocalLeader>gl :YcmCompleter GoToDeclaration<CR>
+nnoremap <LocalLeader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <LocalLeader>gg :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <LocalLeader>gw :YcmCompleter GoTo<CR>
+nnoremap <LocalLeader>gx :YcmCompleter FixIt<CR>
+nnoremap <LocalLeader>gd :YcmDiags<CR>
 
 " ---------------------------------------------------------------------------
 " status line
