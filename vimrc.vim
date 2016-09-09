@@ -28,6 +28,10 @@ filetype off
 source ~/vimfiles/vundle_config.vim
 filetype on
 
+" XML folding
+let g:xml_syntax_folding=1
+au FileType xml setlocal foldmethod=syntax
+
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
